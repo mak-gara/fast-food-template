@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна</title>
-
+    <title>Контакти</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
@@ -25,7 +23,7 @@
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link nav__link_active">Меню</a>
+                            <a href="categories.html" class="nav__link nav__link_active">Меню</a>
                         </li>
                         <li class="nav__item">
                             <a href="contacts.html" class="nav__link">Контакти</a>
@@ -54,79 +52,34 @@
 
             </div>
         </header>
+
         <main class="main">
-            <div class="menu main__menu">
-                <div class="container menu__container">
-                    <h1 class="title main__title">Меню</h1>
-                    <div class="menu__items">
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/06.jpg" alt="01"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Піца</a>
-                            </div>
+            <div class="container">
+                <div class="contacts main__contacts">
+                    <div class="contacts__data">
+                        <h1 class="title contacts__title">Контакти</h1>
+                        <div class="contacts__paragraphs">
+                            <p class="text contacts__item">
+                                Знаходиться за адресою:<br>
+                                м. Харків Центр | вул. Полтавський шлях, 3
+                            </p>
+                            <p class="text contacts__item">
+                                З нами можна зв'язатися за телефоном:<br>
+                                +38 (123) 123-23-33
+                            </p>
+                            <p class="text contacts__item">
+                                Електронна пошта:<br>
+                                bestburger@gmail.com
+                            </p>
                         </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/05.jpg" alt="02"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Суші та сети</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/03.jpg" alt="03"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Бургери та закуски</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/03.jpg" alt="03"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Бургери та закуски</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/06.jpg" alt="01"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Піца</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/05.jpg" alt="02"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Суші та сети</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/03.jpg" alt="03"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Бургери та закуски</a>
-                            </div>
-                        </div>
-                        <div class="category-card menu__category-card">
-                            <div class="category-card__img">
-                                <a href="#!"><img src="img/categories/03.jpg" alt="03"></a>
-                            </div>
-                            <div class="category-card__title">
-                                <a href="#!">Бургери та закуски</a>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="map contacts__map">
+                        <div class="map__view" id="map"></div>
                     </div>
                 </div>
             </div>
         </main>
+
         <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__about">
@@ -191,7 +144,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
